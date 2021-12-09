@@ -1,0 +1,51 @@
+mixin info-item(item)
+	.info-item
+		.info-item__photo-wrap
+			img(src=item.srcPhoto, alt="")
+		p.info-item__ttl!= item.ttl
+		p.info-item__desc!= item.desc
+
+
+-
+	const infoArray = [
+		{
+			srcPhoto: 'img/svg/info-icon-1.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, molestias.'
+		},
+		{
+			srcPhoto: 'img/svg/info-icon-2.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+		},
+		{
+			srcPhoto: 'img/svg/info-icon-3.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+		},
+		{
+			srcPhoto: 'img/svg/info-icon-4.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum dolor sit amet.'
+		},
+		{
+			srcPhoto: 'img/svg/info-icon-5.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+		},
+		{
+			srcPhoto: 'img/svg/info-icon-6.svg',
+			ttl: 'Lorem, ipsum.',
+			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corporis.'
+		}
+	];
+
+
+
+section.info
+	.container
+		h2.info__title.title Lorem, ipsum.
+		p.info__desc.desc-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore aperiam perspiciatis consequuntur repellendus labore, ex iste iusto voluptates ducimus quibusdam vel. Eveniet, deleniti!
+		.info__list
+			each item in infoArray
+				+info-item(item)

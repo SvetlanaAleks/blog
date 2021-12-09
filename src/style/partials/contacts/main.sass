@@ -1,0 +1,45 @@
+.contacts
+	padding-top: 230px
+	padding-bottom: 150px
+	background: url('../img/svg/articles_bg.svg') no-repeat, url('../img/svg/element.svg') no-repeat
+	background-position: calc(50% - -690px) 130px,calc(50% - 590px) 200px
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__info
+		max-width: 450px
+		width: 100%
+	&__title
+		margin-bottom: 15px
+	&__desc
+		margin-bottom: 30px
+	&__city
+		font-family: $title-font
+		font-size: 20px
+		line-height: 1.2
+		margin-bottom: 25px
+		padding-bottom: 25px
+		border-bottom: 1px solid transparentize($grey, .8)
+		display: flex
+		align-items: center
+		.fico
+			margin-right: 10px
+			font-size: 22px
+			color: $blue
+	&__links
+		margin-bottom: 15px
+	&__link
+		color: $dark-grey
+		text-decoration: none
+		display: block
+		+nlt
+			margin-bottom: 10px
+	&__address
+		font-size: 16px
+		line-height: 26px
+		color: $grey
+		width: 70%
+	&__form
+		max-width: 500px
+		width: 100%

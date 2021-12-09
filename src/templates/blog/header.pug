@@ -1,0 +1,60 @@
+mixin article-card(item)
+	.article-item
+		.article-item__top
+			img(src=item.srcPhoto, alt=item.title)
+		.article-item__bottom
+			p.article-item__title!= item.title
+			p.article-item__desc!= item.desc
+			a.article-item__link(href=item.link)
+				span Read more
+				i.fico.fico-arrow
+
+
+-
+	const articles = [
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		},
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		},
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		},
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		},
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		},
+		{
+			srcPhoto: 'img/article-preview-1.jpg',
+			title: 'Disease detection, check up in the laboratory',
+			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
+			link: '#'
+		}
+	];
+
+
+header.header-blog
+	.container
+		h1.header-blog__title Blog
+		p.header-blog__desc Lorem ipsum dolor sit amet.
+		.header-blog__list
+			each article in articles
+				+article-card(article)

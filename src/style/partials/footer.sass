@@ -1,0 +1,44 @@
+.footer
+	padding: 60px 0
+	background: url('../img/svg/element.svg') no-repeat calc(50% - 720px) bottom, $blue-gradient
+	color: #FFFFFF
+	&__top
+		line-height: 28px
+		font-size: 18px
+		display: flex
+		align-items: flex-start
+		margin-bottom: 70px
+		display: flex
+		justify-content: space-between
+	&__col
+		max-width: 420px
+		width: 100%
+	&__logo
+		font-family: $title-font
+		font-weight: bold
+		font-size: 30px
+		color: white
+		text-decoration: none
+		margin-bottom: 20px
+		display: inline-block
+	&__desc
+		opacity: 0.8
+		font-size: 16px
+	&__copy
+		text-align: center
+		font-size: 16px
+
+.menu-f
+	display: flex
+	align-items: center
+	&__item
+		font-family: $title-font
+		font-size: 18px
+		line-height: 23px
+		+nlt
+			margin-right: 40px
+	&__link
+		color: white
+		font-weight: bold
+		text-decoration: none
+		transition: all .3s

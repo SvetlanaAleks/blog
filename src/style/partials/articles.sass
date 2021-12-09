@@ -1,0 +1,65 @@
+.articles
+	padding: 90px 0
+	background: url('../img/svg/articles_bg.svg') no-repeat, url('../img/svg/element.svg') no-repeat
+	background-position: calc(50% - -690px) 130px,calc(50% - 590px) 200px
+	&__title
+		text-align: center
+		margin-bottom: 60px
+		padding-bottom: 30px
+		position: relative
+		&::after
+			content: ''
+			display: block
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translate(-50%, -50%)
+			height: 4px
+			width: 100px
+			border-radius: 3px
+			background: $blue-gradient
+	&__list
+		display: flex
+		justify-content: space-between
+		margin-bottom: 50px
+	&__btn
+		max-width: 250px
+		margin: auto
+
+
+.article-item
+	max-width: calc(100%/3 - 30px)
+	width: 100%
+	background: #FFFFFF
+	box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
+	border-radius: 20px
+	overflow: hidden
+	&:not(:nth-of-type(-n+3))
+		margin-top: 50px
+	&__top
+		img
+			width: 100%
+	&__bottom
+		padding: 25px 35px
+	&__title
+		font-size: 21px
+		line-height: 32px
+		font-weight: bold
+		font-family: $title-font
+		margin-bottom: 15px
+	&__desc
+		font-size: 16px
+		line-height: 28px
+		margin-bottom: 30px
+		color: $grey
+	&__link
+		text-decoration: none
+		color: $blue
+		font-size: 17px
+		line-height: 20px
+		display: flex
+		align-items: center
+		span
+			margin-right: 10px
+		.fico
+			font-size: 12px
