@@ -1,0 +1,29 @@
+.purpose
+	padding: 100px 0
+	background: url('../img/svg/element.svg') no-repeat calc(50% - 720px) bottom, $blue-gradient
+	&__wrap
+		display: flex
+		align-items: center
+		justify-content: center
+	&__col
+		max-width: 560px
+		width: 100%
+		padding: 40px 0
+		display: flex
+		align-items: flex-start
+		+nlt
+			padding-right: 70px
+			border-right: 1px solid transparentize(white, .5)
+		&:last-of-type
+			padding-left: 70px
+	&__img
+		margin-right: 10px
+		width: 95px
+	&__ttl
+		color: white
+		margin-bottom: 15px
+		line-height: 1
+	&__text
+		font-size: 18px
+		line-height: 28px
+		color: transparentize(white, .2)
