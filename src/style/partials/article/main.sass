@@ -16,7 +16,7 @@
 		border-radius: 10px
 		margin-bottom: 30px
 	&__content
-		max-width: 900px
+		max-width: 950px
 		width: 100%
 		margin: auto
 	&__text-main
@@ -59,6 +59,10 @@
 			font-weight: bold
 	&__list
 		padding-left: 40px
+	&__info
+		display: flex
+		align-items: flex-start
+		justify-content: center
 
 .mt
 	margin-top: 20px
@@ -68,6 +72,10 @@
 	&__item
 		padding-left: 30px
 		position: relative
+		span
+			font-weight: bold
+			display: block
+			color: $dark-grey
 		+nlt
 			margin-bottom: 10px
 		&::after
@@ -80,3 +88,19 @@
 			height: 8px
 			border-radius: 50%
 			background: $blue
+
+.factor
+	max-width: 140px
+	width: 100%
+	+nlt
+		margin-right: 30px
+	&__photo-wrap
+		width: 100px
+		height: 100px
+		border-radius: 50%
+		margin: auto
+		margin-bottom: 10px
+		background: $blue
+	&__text
+		text-align: center
+		line-height: 1.2
