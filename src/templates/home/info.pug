@@ -10,33 +10,33 @@ mixin info-item(item)
 	const infoArray = [
 		{
 			srcPhoto: 'img/svg/info-icon-1.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, molestias.'
+			ttl: 'Профилактика <br> здоровья',
+			desc: 'Практические советы по поддержанию общего здоровья'
 		},
 		{
 			srcPhoto: 'img/svg/info-icon-2.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+			ttl: 'Кулинарные <br>рецепты',
+			desc: 'Вкусная еда, которая позволяет поднять настроение'
 		},
 		{
 			srcPhoto: 'img/svg/info-icon-3.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum dolor sit amet, consectetur adipisicing.'
+			ttl: 'Сердечные <br>заболевания',
+			desc: 'Обзор болезней сердца '
 		},
 		{
 			srcPhoto: 'img/svg/info-icon-4.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum dolor sit amet.'
+			ttl: 'Первая медицинская помощь',
+			desc: 'Правила медицинской помощи'
 		},
 		{
 			srcPhoto: 'img/svg/info-icon-5.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+			ttl: 'Профилактика <br>диабета',
+			desc: 'Уход за здоровьем для диабетиков'
 		},
 		{
 			srcPhoto: 'img/svg/info-icon-6.svg',
-			ttl: 'Lorem, ipsum.',
-			desc: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, corporis.'
+			ttl: 'Профилактика <br>гипертонии',
+			desc: 'Уход за здоровьем для диабетиков'
 		}
 	];
 
@@ -44,8 +44,8 @@ mixin info-item(item)
 
 section.info
 	.container
-		h2.info__title.title Lorem, ipsum.
-		p.info__desc.desc-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis tempore aperiam perspiciatis consequuntur repellendus labore, ex iste iusto voluptates ducimus quibusdam vel. Eveniet, deleniti!
+		h2.info__title.title Что можно найти на нашем блоге?
+		p.info__desc.desc-title Вы когда нибудь задумывались как правильно поддерживать свое здоровье? У нас вы сможете найти полезные советы и общепринятые практики, принятые всемирной организацией ВОЗ
 		.info__list
 			each item in infoArray
 				+info-item(item)
