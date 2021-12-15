@@ -39,6 +39,35 @@ mixin article-card(item)
 	];
 
 
+-
+	const articlesHealth = [
+		{
+			srcPhoto: 'img/article-main-5.jpg',
+			title: '5 шагов к здоровью сердечно сосудистой&nbsp;системы',
+			desc: 'По данным ВОЗ на конец 2020 года гипертония имеется у 1,13 миллиарда человек в мире. 2 из 5-ти не знают о своём диагнозе. И только каждый 10-й гипертоник получает лечение.',
+			link: 'article-5.html'
+		},
+		{
+			srcPhoto: 'img/article-main-6.jpg',
+			title: 'Приборы для измерение артериального давление',
+			desc: ' Механические тонометры требуют участия стороннего человека и дают точные показания лишь в том случае, если измерения проводятся профессионалом.',
+			link: 'article-6.html'
+		},
+		{
+			srcPhoto: 'img/article-main-7.jpg',
+			title: 'Контролируйте свой вес, сахар и холестерин',
+			desc: 'При контроле сахара важно придерживаться определенного типа здорового питания, но это совершенно не значит, что ваша еда будет пресной и невкусной.',
+			link: 'article-7.html'
+		},
+		{
+			srcPhoto: 'img/article-main-8.jpg',
+			title: 'Дышите полными легкими и живите свободно',
+			desc: 'Дыхательные упражнения (метод Шишонина, дыхание по Евдокименко) для снижения артериального давления.',
+			link: 'article-8.html'
+		},
+	];
+
+
 header.header-blog
 	.container
 		h1.header-blog__title Blog
@@ -51,5 +80,7 @@ header.header-blog
 				.header-blog__list#diabet.active.js-articles
 					each article in articlesDiabet
 						+article-card(article)
-				.header-blog__list#health.js-articles 2
+				.header-blog__list#health.js-articles
+					each article in articlesHealth
+						+article-card(article)
 				.header-blog__list#slimming.js-articles 3
