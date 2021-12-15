@@ -1,5 +1,5 @@
 .header-blog
-	padding-top: 200px
+	padding-top: 180px
 	padding-bottom: 100px
 	background: url('../img/svg/articles_bg.svg') no-repeat
 	background-position: calc(50% - -690px) 130px
@@ -9,13 +9,38 @@
 		font-family: $title-font
 		color: $dark-grey
 		font-weight: bold
-		margin-bottom: 25px
-	&__desc
-		font-size: 21px
-		line-height: 32px
-		color: $grey
-		margin-bottom: 45px
-	&__list
+		margin-bottom: 60px
+	&__wrapper
 		display: flex
+		align-items: flex-start
+		justify-content: space-between
+	&__tabs
+		max-width: 250px
+		width: 100%
+		margin-right: 40px
+		flex-shrink: 0
+	&__tab
+		text-transform: uppercase
+		color: $dark-grey
+		font-weight: bold
+		font-family: $title-font
+		padding: 20px
+		cursor: pointer
+		font-size: 20px
+		border-top-right-radius: 20px
+		border-bottom-right-radius: 20px
+		+nlt
+			margin-bottom: 10px
+		&.active
+			background: transparentize($blue, .3)
+			color: white
+	&__list
 		justify-content: space-between
 		flex-wrap: wrap
+		display: none
+		.article-item
+			max-width: calc(100%/2 - 30px)
+			&:not(:nth-of-type(-n+2))
+				margin-top: 50px
+		&.active
+			display: flex

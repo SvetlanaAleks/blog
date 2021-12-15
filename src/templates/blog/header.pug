@@ -11,50 +11,45 @@ mixin article-card(item)
 
 
 -
-	const articles = [
+	const articlesDiabet = [
 		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
+			srcPhoto: 'img/article-main-1.jpg',
+			title: 'Побеждаем диабет',
+			desc: 'На сегодняшний день повышенный уровень сахара успешно терапевтируется, а его негативные проявления — купируются при помощи грамотно выстроенной стратегии лечения.',
+			link: 'article-1.html'
 		},
 		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
+			srcPhoto: 'img/article-main-2.jpg',
+			title: 'Продукты с низким гликемическим индексом',
+			desc: 'Гликемический индекс (ГИ) — это величина, используемая для измерения того, насколько определенные продукты повышают уровень сахара в крови.',
+			link: 'article-2.html'
 		},
 		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
+			srcPhoto: 'img/article-main-3.jpg',
+			title: 'Питание при контроле сахара',
+			desc: 'При контроле сахара важно придерживаться определенного типа здорового питания, но это совершенно не значит, что ваша еда будет пресной и невкусной.',
+			link: 'article-3.html'
 		},
 		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
+			srcPhoto: 'img/article-main-4.jpg',
+			title: 'Народные секреты целительства',
+			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!',
+			link: 'article-4.html'
 		},
-		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
-		},
-		{
-			srcPhoto: 'img/article-preview-1.jpg',
-			title: 'Disease detection, check up in the laboratory',
-			desc: 'In this case, the role of the health laboratory is very important to do a disease detection...',
-			link: '#'
-		}
 	];
 
 
 header.header-blog
 	.container
 		h1.header-blog__title Blog
-		p.header-blog__desc Lorem ipsum dolor sit amet.
-		.header-blog__list
-			each article in articles
-				+article-card(article)
+		.header-blog__wrapper
+			.header-blog__tabs
+				p.header-blog__tab.active.js-tab(data-target="#diabet") диабет
+				p.header-blog__tab.js-tab(data-target="#health") здоровье
+				p.header-blog__tab.js-tab(data-target="#slimming") похудение
+			.header-blog__right
+				.header-blog__list#diabet.active.js-articles
+					each article in articlesDiabet
+						+article-card(article)
+				.header-blog__list#health.js-articles 2
+				.header-blog__list#slimming.js-articles 3

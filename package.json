@@ -23,12 +23,12 @@
   ],
   "homepage": "https://github.com/rubizhenko/gulp_template#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.4",
+    "@babel/core": "^7.16.5",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-env": "^7.16.5",
     "acorn": "^6.4.1",
     "autoprefixer": "^9.5.1",
-    "babel-loader": "^8.0.6",
+    "babel-loader": "^8.2.3",
     "babel-preset-env": "^1.7.0",
     "browser-sync": "^2.26.5",
     "css-mqpacker": "^7.0.0",
@@ -54,6 +54,7 @@
     "node-sass": "^4.12.0",
     "shelljs": "^0.8.3",
     "vinyl-named": "^1.1.0",
+    "webpack": "^5.65.0",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
