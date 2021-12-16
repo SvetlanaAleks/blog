@@ -67,6 +67,34 @@ mixin article-card(item)
 		},
 	];
 
+-
+	const articlesSlimming = [
+		{
+			srcPhoto: 'img/article-main-9.jpg',
+			title: 'Нормальный вес и его преимущества',
+			desc: 'Как показывает статистика, позитивное мышление помогает в достижении результатов в&nbsp;3&nbsp;раза быстрее.',
+			link: 'article-9.html'
+		},
+		{
+			srcPhoto: 'img/article-main-10.jpg',
+			title: 'О калориях в еде',
+			desc: 'Определите свои рамки калорийности пищи в сутки.',
+			link: 'article-10.html'
+		},
+		{
+			srcPhoto: 'img/article-main-11.jpg',
+			title: 'Физическая и психологическая составляющая',
+			desc: 'Психологи нашли закономерность между неудовлетворенностью жизнью, стрессами и избыточным весом.',
+			link: 'article-11.html'
+		},
+		{
+			srcPhoto: 'img/article-main-12.jpg',
+			title: 'Как следует заполнять дневник здоровья',
+			desc: 'Мысль рождает действие, действие - привычку, привычка - характер, характер - судьбу! Ваша новая судьба — стройность!',
+			link: 'article-12.html'
+		},
+	];
+
 
 header.header-blog
 	.container
@@ -83,4 +111,6 @@ header.header-blog
 				.header-blog__list#health.js-articles
 					each article in articlesHealth
 						+article-card(article)
-				.header-blog__list#slimming.js-articles 3
+				.header-blog__list#slimming.js-articles
+					each article in articlesSlimming
+						+article-card(article)
