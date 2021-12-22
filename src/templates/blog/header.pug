@@ -1,12 +1,12 @@
 mixin article-card(item)
-	.article-item
+	a.article-item(href=item.link)
 		.article-item__top
 			img(src=item.srcPhoto, alt=item.title)
 		.article-item__bottom
 			p.article-item__title!= item.title
 			p.article-item__desc!= item.desc
-			a.article-item__link(href=item.link)
-				span Read more
+			p.article-item__link
+				span Читать далее
 				i.fico.fico-arrow
 
 
@@ -33,7 +33,7 @@ mixin article-card(item)
 		{
 			srcPhoto: 'img/article-main-4.jpg',
 			title: 'Народные секреты целительства',
-			desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, rerum!',
+			desc: 'Исследователи утверждают, что ароматные эфирные масла, такие как пажитник, корица, тмин и орегано, помогают снизить систолическое артериальное давление.',
 			link: 'article-4.html'
 		},
 	];
@@ -98,7 +98,7 @@ mixin article-card(item)
 
 header.header-blog
 	.container
-		h1.header-blog__title Blog
+		h1.header-blog__title Профилактика здоровья
 		.header-blog__wrapper
 			.header-blog__tabs
 				p.header-blog__tab.active.js-tab(data-target="#diabet") диабет

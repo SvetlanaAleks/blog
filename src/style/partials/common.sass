@@ -73,10 +73,16 @@ ul, li
 	font-family: $title-font
 	border: none
 	font-size: 18px
+	transition: all .3s
 	&--empty
 		color: $blue
 		background: none
 		border: 2px solid $blue
+		&:hover
+			background: $blue
+			color: white
+	&:hover
+		box-shadow: 0px 8px 13px 0px transparentize($blue, .6)
 
 
 .title
