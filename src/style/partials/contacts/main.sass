@@ -3,13 +3,29 @@
 	padding-bottom: 150px
 	background: url('../img/svg/articles_bg.svg') no-repeat, url('../img/svg/element.svg') no-repeat
 	background-position: calc(50% - -690px) 130px,calc(50% - 590px) 200px
+	+r(1023)
+		padding-top: 160px
+		padding-bottom: 110px
+	+r(767)
+		background-position: calc(50% - -550px) 170px,calc(50% - 300px) 120px
+	+r(479)
+		padding-top: 140px
+		padding-bottom: 50px
 	&__wrap
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+r(767)
+			display: block
 	&__info
 		max-width: 450px
 		width: 100%
+		+r(1023)
+			margin-right: 20px
+		+r(767)
+			margin: auto
+			text-align: center
+			margin-bottom: 20px
 	&__title
 		margin-bottom: 15px
 	&__desc
@@ -43,3 +59,5 @@
 	&__form
 		max-width: 500px
 		width: 100%
+		+r(767)
+			margin: auto

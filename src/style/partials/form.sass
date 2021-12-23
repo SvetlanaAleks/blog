@@ -3,6 +3,10 @@
 	box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4)
 	border-radius: 20px
 	padding: 50px
+	+r(1023)
+		padding: 30px
+	+r(479)
+		padding: 15px
 	&__input
 		width: 100%
 		box-sizing: border-box
@@ -13,5 +17,15 @@
 		padding: 0 15px
 		color: $grey
 		font-size: 16px
+		+r(1023)
+			height: 50px
+		+r(479)
+			height: 40px
+			padding: 0 10px
+			margin-bottom: 10px
 	&__btn
 		max-width: 250px
+		+r(1023)
+			margin: auto
+		+r(479)
+			max-width: 100%
