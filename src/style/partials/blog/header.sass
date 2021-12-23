@@ -3,6 +3,12 @@
 	padding-bottom: 100px
 	background: url('../img/svg/articles_bg.svg') no-repeat
 	background-position: calc(50% - -690px) 130px
+	+r(1023)
+		padding-top: 150px
+		padding-bottom: 80px
+	+r(479)
+		padding-top: 130px
+		padding-bottom: 50px
 	&__title
 		font-size: 48px
 		line-height: 56px
@@ -10,15 +16,43 @@
 		color: $dark-grey
 		font-weight: bold
 		margin-bottom: 60px
+		+r(1249)
+			font-size: 42px
+			line-height: 1.2
+		+r(1023)
+			font-size: 38px
+			text-align: center
+			margin-bottom: 40px
+		+r(767)
+			font-size: 34px
+		+r(639)
+			font-size: 32px
+			margin-bottom: 30px
+		+r(479)
+			font-size: 24px
+			margin-bottom: 20px
 	&__wrapper
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
+		+r(1023)
+			display: block
 	&__tabs
 		max-width: 250px
 		width: 100%
 		margin-right: 40px
 		flex-shrink: 0
+		+r(1023)
+			max-width: 100%
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 0
+			margin-bottom: 30px
+		+r(767)
+			margin-bottom: 20px
+		+r(479)
+			justify-content: space-between
 	&__tab
 		text-transform: uppercase
 		color: $dark-grey
@@ -34,6 +68,23 @@
 		&.active
 			background: transparentize($blue, .3)
 			color: white
+		+r(1023)
+			border-radius: 15px
+			max-width: 200px
+			width: 100%
+			text-align: center
+			+nlt
+				margin-right: 15px
+				margin-bottom: 0
+		+r(767)
+			font-size: 18px
+			padding: 15px
+		+r(479)
+			max-width: calc(100%/3 - 5px)
+			padding: 10px 5px
+			font-size: 14px
+			+nlt
+				margin-right: 0
 	&__list
 		justify-content: space-between
 		flex-wrap: wrap
@@ -44,3 +95,11 @@
 				margin-top: 50px
 		&.active
 			display: flex
+		+r(1249)
+			.article-item
+				max-width: calc(100%/2 - 10px)
+				&:not(:nth-of-type(-n+2))
+					margin-top: 20px
+		+r(1023)
+			.article-item
+				max-width: 100%
