@@ -2,6 +2,10 @@
 	padding: 60px 0
 	background: url('../img/svg/element.svg') no-repeat calc(50% - 720px) bottom, $blue-gradient
 	color: #FFFFFF
+	+r(1023)
+		padding: 40px 0
+	+r(767)
+		padding: 30px 0
 	&__top
 		line-height: 28px
 		font-size: 18px
@@ -10,27 +14,52 @@
 		margin-bottom: 70px
 		display: flex
 		justify-content: space-between
+		+r(1023)
+			margin-bottom: 50px
+		+r(767)
+			margin-bottom: 30px
+		+r(479)
+			display: block
 	&__col
 		max-width: 420px
 		width: 100%
+		+r(1023)
+			max-width: 320px
+		+r(767)
+			max-width: 290px
+		+r(479)
+			margin: auto
+			text-align: center
+			margin-bottom: 20px
 	&__logo
-		font-family: $title-font
-		font-weight: bold
-		font-size: 30px
-		color: white
-		text-decoration: none
 		margin-bottom: 20px
 		display: inline-block
+		+r(1023)
+			max-width: 250px
+			margin-bottom: 10px
+		+r(767)
+			max-width: 230px
+		+r(639)
+			max-width: 180px
 	&__desc
 		opacity: 0.8
 		font-size: 16px
+		+r(767)
+			font-size: 15px
+			line-height: 1.4
 	&__copy
 		text-align: center
 		font-size: 16px
-
+		+r(767)
+			font-size: 15px
+			line-height: 1.4
 .menu-f
 	display: flex
 	align-items: center
+	+r(639)
+		display: block
+	+r(479)
+		text-align: center
 	&__item
 		font-family: $title-font
 		font-size: 18px
@@ -39,6 +68,11 @@
 			margin-right: 40px
 		&:hover
 			text-decoration: underline
+		+r(639)
+			font-size: 16px
+			+nlt
+				margin-right: 0
+				margin-bottom: 10px
 	&__link
 		color: white
 		font-weight: bold

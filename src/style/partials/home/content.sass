@@ -3,15 +3,57 @@
 	background: url('../img/svg/element.svg') no-repeat, url('../img/svg/element.svg') no-repeat, url('../img/svg/element.svg') no-repeat
 	background-position: calc(50% - 790px) 500px,calc(50% - 250px) 55px,calc(50% - -560px) 824px
 	background-size: auto, 100px, auto
+	+r(1249)
+		background-position: calc(50% - 830px) 540px,calc(50% - 250px) 55px,calc(50% - -510px) 824px
+		padding: 80px 0
+	+r(1023)
+		padding: 60px 0
+	+r(767)
+		padding-top: 30px
+		padding-bottom: 60px
+	+r(479)
+		padding-top: 25px
+		padding-bottom: 40px
 	&__row
 		display: flex
 		align-items: center
 		justify-content: space-between
 		+nlt
 			margin-bottom: 70px
+		+r(1023)
+			&:nth-of-type(1)
+				.content__col-img
+					margin-left: -90px
+					margin-right: 20px
+			&:nth-of-type(2)
+				.content__col-img
+					margin-right: -90px
+					margin-left: 20px
+		+r(767)
+			+nlt
+				margin-bottom: 50px
+			&:nth-of-type(1)
+				.content__col-img
+					margin-left: -40px
+					margin-right: 10px
+			&:nth-of-type(2)
+				.content__col-img
+					margin-right: -40px
+					margin-left: 10px
+		+r(639)
+			display: block
+			&:nth-of-type(1), &:nth-of-type(2)
+				.content__col-img
+					margin: 0 auto
+					margin-bottom: 20px
 	&__col-info
 		max-width: 480px
 		width: 100%
+		+r(1249)
+			max-width: 450px
+		+r(639)
+			max-width: 100%
+			text-align: center
 	&__title
 		position: relative
 		margin-bottom: 20px
@@ -26,11 +68,40 @@
 			width: 80px
 			border-radius: 3px
 			background: $blue-gradient
+		+r(1023)
+			margin-bottom: 10px
+			padding-bottom: 15px
+			font-size: 28px
+		+r(767)
+			font-size: 24px
+		+r(639)
+			&::after
+				left: 50%
+				transform: translateX(-50%)
 	&__desc
 		margin-bottom: 20px
 		width: 80%
+		+r(1023)
+			width: 100%
+			margin-bottom: 15px
 	&__btn
 		max-width: 250px
+		+r(767)
+			max-width: 200px
+		+r(639)
+			margin: auto
+		+r(479)
+			max-width: 100%
 	&__col-img
 		max-width: 640px
 		width: 100%
+		&--mob
+			display: none
+		+r(1249)
+			max-width: 530px
+		+r(639)
+			max-width: 400px
+			&--desc
+				display: none
+			&--mob
+				display: block

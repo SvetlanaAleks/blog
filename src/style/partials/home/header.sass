@@ -4,13 +4,34 @@
 	background: url('../img/svg/element.svg') no-repeat, url('../img/svg/element.svg') no-repeat
 	background-position: calc(50% - 830px) 600px, calc(50% - -550px) 214px
 	background-size: auto, 100px
+	+r(1249)
+		padding-top: 200px
+		padding-bottom: 70px
+		background-position: calc(50% - 600px) 530px,calc(50% - -480px) 204px
+	+r(1023)
+		padding-top: 170px
+		padding-bottom: 50px
+		background-position: calc(50% - 360px) 500px,calc(50% - -320px) 254px
+	+r(767)
+		padding-top: 140px
+		padding-bottom: 30px
+	+r(639)
+		padding-top: 110px
+		padding-bottom: 25px
+	+r(479)
+		background: none
 	&__wrap
 		display: flex
 		align-items: center
 		justify-content: space-between
+		+r(1023)
+			display: block
 	&__left
 		max-width: 565px
 		width: 100%
+		+r(1023)
+			max-width: 100%
+			text-align: center
 	&__title
 		font-size: 48px
 		line-height: 56px
@@ -18,14 +39,60 @@
 		color: $dark-grey
 		font-weight: bold
 		margin-bottom: 25px
+		+r(1249)
+			font-size: 42px
+			line-height: 1.2
+			margin-bottom: 20px
+		+r(1023)
+			font-size: 38px
+		+r(767)
+			font-size: 34px
+			margin-bottom: 15px
+		+r(639)
+			font-size: 32px
+		+r(479)
+			font-size: 24px
+			margin-bottom: 10px
 	&__desc
-		font-size: 21px
-		line-height: 32px
+		font-size: 18px
+		line-height: 30px
 		color: $grey
-		margin-bottom: 45px
+		margin-bottom: 40px
 		width: 90%
+		+r(1249)
+			margin-bottom: 20px
+		+r(1023)
+			width: 100%
+			line-height: 28px
+		+r(767)
+			font-size: 17px
+			line-height: 1.4
+		+r(479)
+			font-size: 16px
+			margin-bottom: 10px
 	&__btn
 		max-width: 300px
+		+r(1023)
+			margin: auto
+		+r(767)
+			max-width: 250px
+		+r(479)
+			max-width: 100%
 	&__right
 		max-width: 620px
 		width: 100%
+		&--mob
+			display: none
+		+r(1249)
+			margin-left: -50px
+		+r(1023)
+			margin: auto
+			margin-bottom: 20px
+			max-width: 500px
+			margin-top: -90px
+			&--desc
+				display: none
+			&--mob
+				display: block
+		+r(767)
+			display: none
