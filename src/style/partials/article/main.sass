@@ -257,18 +257,37 @@
 			display: block
 			font-size: 18px
 			margin-top: 10px
+		+r(1023)
+			font-size: 36px
+			padding: 10px
+			span
+				font-size: 16px
+		+r(767)
+			font-size: 32px
+			line-height: 1
+			margin-bottom: 20px
+			span
+				font-size: 16px
+				margin-top: 3px
 	&__diet-ttl
 		margin-bottom: 20px
 		padding: 10px 25px
 		color: white
-		background: #BE5943
+		background: #BF697A
 		font-weight: bold
 		font-size: 22px
+		+r(767)
+			font-size: 20px
+			padding: 5px 15px
+			margin-bottom: 15px
 	&__diet-subttl 
 		background: #F0F0F0
 		margin-bottom: 20px
 		font-weight: bold
 		padding: 10px 25px
+		+r(767)
+			padding: 5px 15px
+			margin-bottom: 15px
 	&__diet-weeks
 		display: flex
 		flex-wrap: wrap
@@ -277,6 +296,14 @@
 		width: 48%
 		&:nth-of-type(-n+2)
 			margin-bottom: 30px
+		+r(1023)
+			width: 49%
+			.article__list
+				padding-left: 0
+		+r(639)
+			width: 100%
+			&:nth-of-type(-n+3)
+				margin-bottom: 20px
 	&__exercises
 		display: flex
 		justify-content: space-between
