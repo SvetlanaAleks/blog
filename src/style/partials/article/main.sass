@@ -3,6 +3,9 @@
 	padding-bottom: 100px
 	&--2
 		background: url('../img/svg/decor.svg') no-repeat calc(50% - -459px) 1000px
+	+r(767)
+		&--2
+			background: none
 	+r(1023)
 		padding-top: 160px
 	+r(767)
@@ -123,6 +126,8 @@
 		+r(767)
 			font-size: 22px
 			margin-bottom: 10px
+			&--veg
+				font-size: 20px
 	&__desc
 		&--main
 			padding: 20px
@@ -180,16 +185,44 @@
 			+nlt
 				margin-bottom: 0
 				margin-right: 40px
+		+r(767)
+			.article__wrap
+				+nlt
+					margin-right: 25px
+		+r(639)
+			display: block
+			+nlt
+				margin-bottom: 25px
+			.article__wrap
+				max-width: 100%
+				+nlt
+					margin-bottom: 25px
+					margin-right: 0
 	&__flex
 		display: flex
 		align-items: flex-start
 		justify-content: space-between
+		+r(1023)
+			flex-direction: column-reverse
 	&__left
 		flex: 1
 		margin-right: 50px
+		+r(1023)
+			margin-right: 0
+			width: 100%
 	&__right
 		max-width: 250px
 		width: 100%
+		+r(1023)
+			max-width: 100%
+			margin-bottom: 30px
+			display: flex
+			align-items: center
+			justify-content: center
+		+r(639)
+			margin-bottom: 20px
+		+r(479)
+			display: block
 	&__table
 		margin-bottom: 10px
 	&__table-label
@@ -420,6 +453,17 @@
 .label
 	text-align: center
 	padding: 15px 10px
+	+r(1023)
+		+nlt
+			margin-right: 15px
+	+r(639)
+		padding: 10px 5px
+		font-size: 15px
+		width: calc(100%/3)
+		+nlt
+			margin-right: 0
+	+r(479)
+		width: 100%
 	&--red
 		background: red
 	&--orange
