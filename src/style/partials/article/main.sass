@@ -148,8 +148,13 @@
 			font-weight: bold
 			color: $dark-grey
 		+r(1023)
+			&--quote
+				padding: 10px 20px 10px 30px
 			+nlt
 				margin-bottom: 10px
+		+r(469)
+			&--quote
+				padding: 10px 10px 10px 15px
 	&__list
 		padding-left: 40px
 		+r(767)
@@ -625,6 +630,23 @@
 			font-weight: bold
 		+nlt
 			margin-bottom: 15px
+		+r(767)
+			padding: 20px
+			padding-left: 70px
+			&:before
+				font-size: 50px
+		+r(639)
+			padding: 15px
+			padding-left: 60px
+			&::before
+				font-size: 40px
+				transform: none
+				top: 9px
+		+r(479)
+			padding-left: 42px
+			&::before
+				left: 10px
+				font-size: 30px
 
 
 .table
