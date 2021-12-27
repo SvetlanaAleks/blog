@@ -111,7 +111,7 @@
 		margin-bottom: 25px
 		font-weight: bold
 		&--color
-			background: #BE5943
+			background: #BF697A
 			padding: 10px 20px
 			color: white
 		&--veg
@@ -129,6 +129,8 @@
 			margin-bottom: 10px
 			&--veg
 				font-size: 20px
+			&--color
+				padding: 5px 15px
 		+r(479)
 			line-height: 1.2
 	&__desc
@@ -479,13 +481,31 @@
 	padding: 30px
 	+nlt
 		margin-bottom: 20px
+	+r(767)
+		padding: 20px
+	+r(639)
+		display: block
+		text-align: center
+	+r(479)
+		padding: 15px
 	&__photo-wrap
 		margin-right: 30px
 		flex-shrink: 0
+		+r(767)
+			margin-right: 20px
+		+r(639)
+			margin: auto
+			margin-bottom: 10px
 	&__photo
 		width: 150px
 		height: 150px
 		+object-fit(contain)
+		+r(1023)
+			width: 130px
+			height: 130px
+		+r(767)
+			width: 110px
+			height: 110px
 .label
 	text-align: center
 	padding: 15px 10px
