@@ -5,10 +5,14 @@
 		padding: 80px 0
 	+r(1023)
 		padding: 60px 0
+	+r(767)
+		padding: 40px 0
 	&__wrap
 		display: flex
 		align-items: center
 		justify-content: center
+		+r(767)
+			display: block
 	&__col
 		max-width: 560px
 		width: 100%
@@ -31,6 +35,17 @@
 				padding-right: 30px
 			&:last-of-type
 				padding-left: 30px
+		+r(767)
+			max-width: 100%
+			padding: 0
+			+nlt
+				padding-right: 0
+				margin-bottom: 20px
+				padding-bottom: 20px
+				border-right: none
+				border-bottom: 1px solid transparentize(white, .5)
+			&:last-of-type
+				padding-left: 0
 	&__img
 		margin-right: 10px
 		width: 95px
@@ -41,7 +56,12 @@
 		color: white
 		margin-bottom: 15px
 		line-height: 1
+		+r(1023)
+			margin-bottom: 5px
 	&__text
 		font-size: 18px
 		line-height: 28px
 		color: transparentize(white, .2)
+		+r(1023)
+			font-size: 16px
+			line-height: 1.4
