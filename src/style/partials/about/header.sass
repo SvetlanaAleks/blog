@@ -4,6 +4,11 @@
 	background: url('../img/svg/element.svg') no-repeat, url('../img/svg/element.svg') no-repeat
 	background-position: calc(50% - 830px) 600px, calc(50% - -550px) 214px
 	background-size: auto, 100px
+	+r(1249)
+		padding-top: 170px
+		padding-bottom: 70px
+	+r(1023)
+		padding-bottom: 50px
 	&__wrap
 		display: flex
 		align-items: center
@@ -11,6 +16,9 @@
 	&__left
 		max-width: 565px
 		width: 100%
+		+r(1023)
+			max-width: 365px
+			flex-shrink: 0
 	&__title
 		font-size: 43px
 		line-height: 54px
@@ -18,11 +26,44 @@
 		color: $dark-grey
 		font-weight: bold
 		margin-bottom: 25px
+		+r(1249)
+			font-size: 42px
+			line-height: 1.2
+			margin-bottom: 20px
+		+r(1023)
+			font-size: 36px
+		+r(767)
+			font-size: 34px
+			margin-bottom: 15px
+		+r(639)
+			font-size: 32px
+		+r(479)
+			font-size: 24px
+			margin-bottom: 10px
 	&__desc
-		font-size: 20px
-		line-height: 32px
+		font-size: 18px
+		line-height: 30px
 		color: $grey
 		width: 80%
+		+r(1249)
+			margin-bottom: 20px
+		+r(1023)
+			width: 100%
+			line-height: 28px
+		+r(767)
+			font-size: 17px
+			line-height: 1.4
+		+r(479)
+			font-size: 16px
+			margin-bottom: 10px
 	&__right
 		max-width: 620px
 		width: 100%
+		+r(1249)
+			margin-left: -50px
+		+r(1023)
+			max-width: 500px
+			margin-left: 0
+			margin-right: -50px
+		+r(767)
+			display: none

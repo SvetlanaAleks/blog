@@ -1,6 +1,10 @@
 .purpose
 	padding: 100px 0
 	background: #BF697A
+	+r(1249)
+		padding: 80px 0
+	+r(1023)
+		padding: 60px 0
 	&__wrap
 		display: flex
 		align-items: center
@@ -16,9 +20,23 @@
 			border-right: 1px solid transparentize(white, .5)
 		&:last-of-type
 			padding-left: 70px
+		+r(1249)
+			+nlt
+				padding-right: 50px
+			&:last-of-type
+				padding-left: 50px
+		+r(1023)
+			padding: 20px 0
+			+nlt
+				padding-right: 30px
+			&:last-of-type
+				padding-left: 30px
 	&__img
 		margin-right: 10px
 		width: 95px
+		+r(1023)
+			margin-right: 0
+			width: 75px
 	&__ttl
 		color: white
 		margin-bottom: 15px
