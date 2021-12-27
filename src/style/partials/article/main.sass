@@ -127,6 +127,8 @@
 		+r(767)
 			font-size: 22px
 			margin-bottom: 10px
+			br
+				display: none
 			&--veg
 				font-size: 20px
 			&--color
@@ -138,6 +140,9 @@
 			padding: 20px
 			background: #F0F0F0
 			border-left: 5px solid $blue
+		+r(639)
+			&--table-calories
+				overflow-x: scroll
 	&__text
 		+nlt
 			margin-bottom: 20px
@@ -146,6 +151,8 @@
 			border-left: 5px solid $blue
 			background: transparentize($blue, .9)
 			font-weight: bold
+			position: relative
+			z-index: 1
 			span
 				color: tomato
 		&--bold
@@ -351,6 +358,8 @@
 			max-width: 800px
 			width: 100%
 			margin: auto
+		+r(639)
+			width: 600px
 	&__info-block
 		display: flex
 		align-items: center
@@ -382,16 +391,37 @@
 		display: flex
 		justify-content: center
 		align-items: flex-start
+		+r(639)
+			flex-wrap: wrap
+			justify-content: flex-start
+			align-items: flex-start
 	&__point
 		max-width: 200px
 		width: 100%
 		text-align: center
 		+nlt
 			margin-right: 30px
+		+r(767)
+			+nlt
+				margin-right: 20px
+		+r(639)
+			text-align: left
+			max-width: 100%
+			display: flex
+			align-items: center
+			+nlt
+				margin-right: 0
+				margin-bottom: 15px
 	&__point-img
 		width: 140px
 		margin: auto
 		margin-bottom: 10px
+		+r(767)
+			width: 120px
+		+r(639)
+			width: 100px
+			margin: 0
+			margin-right: 15px
 
 .list-component
 	&__item
@@ -489,26 +519,54 @@
 				display: block
 		+nlt
 			border-right: 1px solid transparentize(#000, .9)
+		+r(1023)
+			&--small
+				font-size: 14px
+				line-height: 1.2
+		+r(767)
+			&--big
+				font-size: 14px
+			&--small
+				padding: 5px
 
 .qr-code
 	display: flex
 	align-items: flex-start
+	+r(479)
+		display: block
+		text-align: center
 	&__left
 		margin-right: 30px
 		max-width: 60%
+		+r(1023)
+			max-width: 70%
+		+r(479)
+			max-width: 100%
+			margin-right: 0
+			margin-bottom: 15px
 	&__title
 		font-size: 22px
 		font-family: $title-font
 		margin-bottom: 10px
 		color: $dark-grey
 		font-weight: bold
+		+r(767)
+			font-size: 20px
+		+r(639)
+			font-size: 18px
+			margin-bottom: 5px
 	&__label
 		font-style: italic
 		font-size: 14px
+		+r(639)
+			font-size: 12px
 	&__photo
 		max-width: 150px
 		width: 100%
-
+		+r(767)
+			max-width: 130px
+		+r(639)
+			max-width: 100px
 
 .exercise-item
 	display: flex
