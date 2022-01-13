@@ -10,6 +10,34 @@
     <title>БЛОГОВЕСТ - Физическая и психологическая составляющая</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrapper"><a class="nav__logo" href="/">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="/img/logo-w.png"/><img src="/img/logo-b.png" alt="Pro Health"/>
+            </picture></a>
+          <ul class="nav__list menu">
+            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="nav__burger burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top"><img class="menu-mobile__logo" src="/img/logo-w.png" alt="Pro Health"/>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__menu nav-list">
+          <li class="nav-list__item"><a class="nav-list__link" href="about.html">О нас</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="blog.html">Блог</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="menu-mobile__bottom"></div>
+      </div>
+    </div>
     <section class="article">
       <div class="container">
         <h1 class="article__title">Физическая и психологическая составляющая</h1><img class="article__photo-main" src="/img/article-main-11.jpg" alt=""/>
@@ -91,17 +119,6 @@
         </div>
       </div>
     </section>
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrapper"><a class="nav__logo" href="/"><img src="/img/logo-b.png" alt="Pro Health"/></a>
-          <ul class="nav__list menu">
-            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
-            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -117,6 +134,7 @@
         <p class="footer__copy">Pro Health 2021. All rights reserved</p>
       </div>
     </footer>
+    <div class="overlay js-overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </body>

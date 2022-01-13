@@ -2,7 +2,9 @@
 	.container
 		.nav__wrapper
 			a.nav__logo(href="/")
-				img(src="img/logo-b.png", alt="Pro Health")
+				picture
+					source(media="(max-width: 1024px)", srcset="img/logo-w.png")
+					img(src="img/logo-b.png", alt="Pro Health")
 			ul.nav__list.menu
 				li.menu__item
 					a.menu__link(href="about.html") О нас
@@ -10,3 +12,8 @@
 					a.menu__link(href="blog.html") Блог
 				li.menu__item
 					a.menu__link(href="contacts.html") Контакты
+			.nav__burger.burger.js-burger(data-target="#js-mobile-menu")
+				span.burger__line
+				span.burger__line
+				span.burger__line
+include menu-mob

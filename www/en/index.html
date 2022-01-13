@@ -10,6 +10,34 @@
     <title>Блог о поддержании здоровья и настроения</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrapper"><a class="nav__logo" href="/">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="/img/logo-w.png"/><img src="/img/logo-b.png" alt="Pro Health"/>
+            </picture></a>
+          <ul class="nav__list menu">
+            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="nav__burger burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top"><img class="menu-mobile__logo" src="/img/logo-w.png" alt="Pro Health"/>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__menu nav-list">
+          <li class="nav-list__item"><a class="nav-list__link" href="about.html">О нас</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="blog.html">Блог</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="menu-mobile__bottom"></div>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__wrap">
@@ -28,33 +56,39 @@
         <p class="info__desc desc-title">Как сохранить здоровье и хорошее самочувствие? В нашем блоге вы найдете ответы на этот вопрос. Предлагаем вашему вниманию: полезные советы, практики от экспертов, рецепты здоровых и вкусных блюд.</p>
         <div class="info__list">
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-1.svg" alt=""/></div>
-                <p class="info-item__ttl">Повышенное <br> давление</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-1.svg" alt=""/>
+                  <p class="info-item__ttl">Повышенное <br> давление</p>
+                </div>
                 <p class="info-item__desc">О факторах риска и способах восстановления</p>
               </div>
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-2.svg" alt=""/></div>
-                <p class="info-item__ttl">Рецепты <br>для стройности</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-2.svg" alt=""/>
+                  <p class="info-item__ttl">Рецепты <br>для стройности</p>
+                </div>
                 <p class="info-item__desc">Полезные и вкусные блюда на каждый день</p>
               </div>
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-3.svg" alt=""/></div>
-                <p class="info-item__ttl">Сердечные<br> нарушения</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-3.svg" alt=""/>
+                  <p class="info-item__ttl">Сердечные<br> нарушения</p>
+                </div>
                 <p class="info-item__desc">Обзор недугов, нарушающих работу сердца</p>
               </div>
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-4.svg" alt=""/></div>
-                <p class="info-item__ttl">Первая<br> помощь</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-4.svg" alt=""/>
+                  <p class="info-item__ttl">Первая<br> помощь</p>
+                </div>
                 <p class="info-item__desc">Основные правила помощи в экстренной ситуации</p>
               </div>
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-5.svg" alt=""/></div>
-                <p class="info-item__ttl">Повышенный<br> сахар</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-5.svg" alt=""/>
+                  <p class="info-item__ttl">Повышенный<br> сахар</p>
+                </div>
                 <p class="info-item__desc">Как поддерживать уровень сахара в норме и укрепить здоровье</p>
               </div>
               <div class="info-item">
-                <div class="info-item__photo-wrap"><img src="/img/svg/info-icon-6.svg" alt=""/></div>
-                <p class="info-item__ttl">Профилактика нарушений</p>
+                <div class="info-item__photo-wrap"><img class="info-item__photo" src="/img/svg/info-icon-6.svg" alt=""/>
+                  <p class="info-item__ttl">Профилактика нарушений</p>
+                </div>
                 <p class="info-item__desc">Полезные советы по уходу за здоровьем</p>
               </div>
         </div>
@@ -110,17 +144,6 @@
         </div><a class="articles__btn btn btn--empty" href="blog.html">Посмотреть все</a>
       </div>
     </section>
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrapper"><a class="nav__logo" href="/"><img src="/img/logo-b.png" alt="Pro Health"/></a>
-          <ul class="nav__list menu">
-            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
-            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -136,6 +159,7 @@
         <p class="footer__copy">Pro Health 2021. All rights reserved</p>
       </div>
     </footer>
+    <div class="overlay js-overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </body>

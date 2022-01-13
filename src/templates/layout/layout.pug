@@ -9,9 +9,10 @@ html(lang=LANG.locale)
     block head
       title Блог о поддержании здоровья и настроения
   body
-    block content
     include ../menu.pug
+    block content
 
     include ../footer.pug
+    .overlay.js-overlay
     include scripts.pug
     block scripts

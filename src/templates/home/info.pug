@@ -1,8 +1,8 @@
 mixin info-item(item)
 	.info-item
 		.info-item__photo-wrap
-			img(src=item.srcPhoto, alt="")
-		p.info-item__ttl!= item.ttl
+			img.info-item__photo(src=item.srcPhoto, alt="")
+			p.info-item__ttl!= item.ttl
 		p.info-item__desc!= item.desc
 
 

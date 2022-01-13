@@ -10,14 +10,42 @@
     <title>Профилактика здоровья</title>
   </head>
   <body>
+    <div class="nav">
+      <div class="container">
+        <div class="nav__wrapper"><a class="nav__logo" href="/">
+            <picture>
+              <source media="(max-width: 1024px)" srcset="/img/logo-w.png"/><img src="/img/logo-b.png" alt="Pro Health"/>
+            </picture></a>
+          <ul class="nav__list menu">
+            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
+            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
+            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+          </ul>
+          <div class="nav__burger burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="menu-mobile" id="js-mobile-menu">
+      <div class="menu-mobile__wrap">
+        <div class="menu-mobile__top"><img class="menu-mobile__logo" src="/img/logo-w.png" alt="Pro Health"/>
+          <div class="burger js-burger" data-target="#js-mobile-menu"><span class="burger__line"></span><span class="burger__line"></span><span class="burger__line"></span></div>
+        </div>
+        <ul class="menu-mobile__menu nav-list">
+          <li class="nav-list__item"><a class="nav-list__link" href="about.html">О нас</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="blog.html">Блог</a></li>
+          <li class="nav-list__item"><a class="nav-list__link js-scroll" href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="menu-mobile__bottom"></div>
+      </div>
+    </div>
     <header class="header-blog">
       <div class="container">
-        <h1 class="header-blog__title">Профилактика здоровья</h1>
+        <h1 class="header-blog__title">Профилактика, восстановление и&nbsp;укрепление здоровья</h1>
         <div class="header-blog__wrapper">
           <div class="header-blog__tabs">
-            <p class="header-blog__tab active js-tab" data-target="#diabet">диабет</p>
-            <p class="header-blog__tab js-tab" data-target="#health">здоровье</p>
-            <p class="header-blog__tab js-tab" data-target="#slimming">похудение</p>
+            <p class="header-blog__tab active js-tab" data-target="#diabet">повышенный сахар</p>
+            <p class="header-blog__tab js-tab" data-target="#health">повышенное давление</p>
+            <p class="header-blog__tab js-tab" data-target="#slimming">секреты стройности</p>
           </div>
           <div class="header-blog__right">
             <div class="header-blog__list active js-articles" id="diabet"><a class="article-item" href="article-1.html">
@@ -102,17 +130,6 @@
         </div>
       </div>
     </header>
-    <div class="nav">
-      <div class="container">
-        <div class="nav__wrapper"><a class="nav__logo" href="/"><img src="/img/logo-b.png" alt="Pro Health"/></a>
-          <ul class="nav__list menu">
-            <li class="menu__item"><a class="menu__link" href="about.html">О нас</a></li>
-            <li class="menu__item"><a class="menu__link" href="blog.html">Блог</a></li>
-            <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
     <footer class="footer">
       <div class="container">
         <div class="footer__top">
@@ -128,6 +145,7 @@
         <p class="footer__copy">Pro Health 2021. All rights reserved</p>
       </div>
     </footer>
+    <div class="overlay js-overlay"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/js/main.js"></script>
   </body>
