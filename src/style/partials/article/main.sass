@@ -666,12 +666,18 @@
 		width: 150px
 		height: 150px
 		+object-fit(contain)
+		&--min
+			height: auto
 		+r(1023)
 			width: 130px
 			height: 130px
+			&--min
+				height: auto
 		+r(767)
 			width: 110px
 			height: 110px
+			&--min
+				height: auto
 .label
 	text-align: center
 	padding: 15px 10px
@@ -863,6 +869,10 @@
 			&::before
 				left: 10px
 				font-size: 30px
+	&__photo
+		max-width: 250px
+		width: 100%
+		margin-top: 15px
 
 
 .table
@@ -968,6 +978,13 @@
 		+r(479)
 			margin: auto
 			margin-bottom: 10px
+	&__photo
+		width: 70px
+		height: 70px
+		+object-fit(contain)
+		+r(639)
+			width: 60px
+			height: 60px
 	&__text
 		span
 			font-weight: bold
