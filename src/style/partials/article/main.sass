@@ -136,6 +136,8 @@
 		+r(479)
 			line-height: 1.2
 	&__desc
+		&--image
+			text-align: center
 		&--main
 			padding: 20px
 			background: #F0F0F0
@@ -143,6 +145,38 @@
 		+r(639)
 			&--table-calories
 				overflow-x: scroll
+	&__image
+		display: block
+		max-width: 350px
+		width: 100%
+		margin: auto
+		+r(1023)
+			max-width: 300px
+		+r(639)
+			max-width: 250px
+	&__test
+		display: flex
+		align-items: center
+		img
+			max-width: 200px
+			width: 100%
+			margin-right: 30px
+		+r(1023)
+			img
+				max-width: 180px
+				margin-right: 20px
+		+r(639)
+			align-items: flex-start
+			img
+				max-width: 130px
+				margin-right: 15px
+		+r(479)
+			display: block
+			text-align: center
+			img
+				max-width: 150px
+				margin: auto
+				margin-bottom: 10px
 	&__text
 		+nlt
 			margin-bottom: 20px
@@ -478,6 +512,11 @@
 		+r(767)
 			width: 70px
 			height: 70px
+	&__text
+		span
+			font-weight: bold
+			display: block
+			color: $dark-grey
 
 .table-habits
 	border: 1px solid transparentize(#000, .9)
@@ -908,3 +947,29 @@
 		+r(767)
 			width: 22px
 			height: 22px
+
+
+.list-product
+	&__item
+		display: flex
+		align-items: center
+		+nlt
+			margin-bottom: 25px
+		+r(479)
+			display: block
+			text-align: center
+	&__wrap-photo
+		flex-shrink: 0
+		margin-right: 30px
+		width: 70px
+		+r(639)
+			width: 60px
+			margin-right: 20px
+		+r(479)
+			margin: auto
+			margin-bottom: 10px
+	&__text
+		span
+			font-weight: bold
+			display: block
+			color: $dark-grey
