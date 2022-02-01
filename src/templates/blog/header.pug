@@ -96,6 +96,35 @@ mixin article-card(item)
 	];
 
 
+-
+	const articlesVision = [
+		{
+			srcPhoto: 'img/article-main-13.jpeg',
+			title: 'Опасные заболевания органов зрения',
+			desc: 'Наша цель — показать, как легко и без усилий можно нормализовать работу органов зрения и улучшить ваше качество жизни.',
+			link: 'article-13.html'
+		},
+		{
+			srcPhoto: 'img/article-main-14.jpg',
+			title: '10 продуктов для сохранения зрения',
+			desc: 'Людям с плохим зрением необходимо запомнить: оранжевые продукты богаты каротином и обладают антиоксидантными свойствами, а темно-зеленые продукты содержат лютеин и зеаксантин.',
+			link: 'article-14.html'
+		},
+		{
+			srcPhoto: 'img/article-main-15.jpg',
+			title: 'Советы экспертов',
+			desc: 'Несколько практических советов, придерживаясь которых, вы сможете сохранить здоровье органов зрения.',
+			link: 'article-15.html'
+		},
+		{
+			srcPhoto: 'img/article-main-16.jpg',
+			title: 'Народная медицина для здоровья глаз',
+			desc: 'Позаботьтесь о своем зрении уже сейчас и будьте здоровы!',
+			link: 'article-16.html'
+		},
+	];
+
+
 header.header-blog
 	.container
 		h1.header-blog__title Профилактика, восстановление и&nbsp;укрепление здоровья
@@ -104,6 +133,7 @@ header.header-blog
 				p.header-blog__tab.active.js-tab(data-target="#diabet") повышенный сахар
 				p.header-blog__tab.js-tab(data-target="#health") повышенное давление
 				p.header-blog__tab.js-tab(data-target="#slimming") секреты стройности
+				p.header-blog__tab.js-tab(data-target="#vision") слабое зрение
 			.header-blog__right
 				.header-blog__list#diabet.active.js-articles
 					each article in articlesDiabet
@@ -113,4 +143,7 @@ header.header-blog
 						+article-card(article)
 				.header-blog__list#slimming.js-articles
 					each article in articlesSlimming
+						+article-card(article)
+				.header-blog__list#vision.js-articles
+					each article in articlesVision
 						+article-card(article)
